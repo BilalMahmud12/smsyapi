@@ -1,29 +1,20 @@
 import Link from 'next/link'
+import Logo from './logo'
+import Menu from './menu'
 
-const menu = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
-]
 
 export default function Header() {
     return (
-        <header className='w-full'>
-            <div className='flex justify-between' >
-                <div>
-                    <Link href='/'>
-                        <span>Logo</span>
-                    </Link>
+        <header className='w-full py-3 shadow'>
+            <div className='app-container'>
+                <div className='flex items-center justify-between'>
+                    <div className='flex items-center space-x-20'>
+                        <Link href='/' className=''>
+                            <Logo />
+                        </Link>
+                        <Menu />
+                    </div>
                 </div>
-                <ul className='flex items-center space-x-8'>
-                    {menu.map((item, index) => (
-                        <li key={index}>
-                            <Link href={item.path}>
-                                <span>{item.name}</span>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
             </div>
         </header>
     ) 
