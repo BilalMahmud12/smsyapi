@@ -10,7 +10,7 @@ export default function Logo() {
                 width={140}
                 height={60} 
                 priority
-                className="w-[140px] h-[60px]"
+                className="w-[100px] md:w-[140px] md:h-[60px]"
             />
         </span>
     </div>

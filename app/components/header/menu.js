@@ -26,7 +26,7 @@ export default function Menu() {
                 <li key={index}>
                     <Link 
                         href={item.path} 
-                        className={`${item.path === path ? 'text-accent' : 'text-main'} text-sm font-medium uppercase hover:text-accent transition-all ease-in-out duration-300`}
+                        className={`${item.path === path ? 'text-accent' : 'text-main'} text-sm font-semibold uppercase hover:text-accent transition-all ease-in-out duration-300`}
                     >
                         <span>{item.name}</span>
                     </Link>
