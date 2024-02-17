@@ -14,8 +14,8 @@ export default function Header() {
 
     return (
         <React.Fragment>
-            <header className='w-full py-3 bg-white shadow'>
-                <div className='hidden lg:block absolute z-[0] top-0 w-[250px] xl:w-[310px] h-[100px] bg-white rounded-br-full shadow'></div>
+            <header className='relative z-10 w-full py-3 bg-white shadow'>
+                <div className='hidden  absolute z-[0] top-0 w-[250px] xl:w-[310px] h-[100px] bg-white rounded-br-full shadow '></div>
                 <div className='hidden lg:block app-container relative z-10'>
                     <div className='flex items-center justify-between'>
                         <div className='flex items-center space-x-24'>

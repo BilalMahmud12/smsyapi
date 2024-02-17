@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Header from "./components/header/index";
+import React from "react"
+import HomePage from "./components/homepage"
 
 export default function Home() {
   return (
-    <main className="">
-      
-    </main>
+    <React.Fragment>
+      <HomePage />
+    </React.Fragment>
   );
 }
