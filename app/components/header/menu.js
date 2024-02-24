@@ -8,11 +8,8 @@ const menu = [
     { name: 'kurumsal', path: '/kurumsal' },
     { name: 'projelerimiz', path: '/projelerimiz' },
     { name: 'galeri', path: '/galeri' },
-    { name: 'iletişim', path: '/iletişim' },
+    { name: 'iletişim', path: '/iletisim' },
 ]
-
-
-
 
 
 export default function Menu() {

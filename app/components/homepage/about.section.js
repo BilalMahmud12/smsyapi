@@ -39,7 +39,10 @@ export default function About() {
                             </Link>
                         </div>
                     </div>
+
+                   
                 </div>
+                
             </div>
         </section>
     )
