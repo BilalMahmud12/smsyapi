@@ -3,10 +3,10 @@ import Link from "next/link"
 
 export default function About() {
     return (
-        <section id="aboutUs" className="py-32">
+        <section id="aboutUs" className="py-16 sm:py-32">
             <div className="app-container">
-                <div className="flex items-center">
-                    <div className="flex-1">
+                <div className="flex flex-col sm:flex-row items-center">
+                    <div className="sm:flex-1 mb-6 sm:mb-0">
                         <div className="relative">
                             <div className="absolute z-[-1] w-full h-full rounded-2xl border-4 border-accent/30 top-[-30px] left-[-30px]"></div>
                             <div className="hidden absolute z-[-1] w-[200px] h-[200px] rounded-full border-2 border-main/20 bottom-[-80px] right-[-60px]"></div>
@@ -15,14 +15,13 @@ export default function About() {
                                 alt="About Us"
                                 width={1000}
                                 height={800}
-                                priority
                                 className="rounded-lg"
                             />
                         </div>
                     </div>
 
                     <div className="flex-1">
-                        <div className="pl-28">
+                        <div className="sm:pl-28">
                             <h2 className="text-3xl font-bold text-accent mb-12">Hakkımızda</h2>
                             <p className="text-main font-medium mb-16">
                                 Yenilikçi Mimarlık ve Sürdürülebilir Tasarımlarla Geleceği İnşa Eden XYZ İnşaat, 2000 yılından bu yana kalite ve güvenin simgesi olarak sektörde öncü bir rol üstlenmiştir. 
@@ -42,7 +41,6 @@ export default function About() {
 
                    
                 </div>
-                
             </div>
         </section>
     )

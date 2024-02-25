@@ -20,14 +20,14 @@ const menu = [
 
 export default function Footer() {
     return(
-        <section className="pt-8 bg-main">
+        <footer className="py-8 bg-main">
             <div className="app-container"> 
-            <div className='flex items-center'>
+            <div className='flex flex-col sm:flex-row items-center'>
                <div>
-                <div className='flex-1 p-8 space-y-3'>
+                <div className='flex-1 p-4 sm:p-8 space-y-3'>
                    <div className="flex items-center justify-center">
                      <Link href='/' className=''>
-                      <Logo />
+                      <Logo variant="light" />
                     </Link>
                    </div>        
                 
@@ -54,7 +54,7 @@ export default function Footer() {
                   </div>
                  
                   <div>
-                    <span className="text-xs text-white">Tum Haklari Saklidir. @2024 SMS Yapi Group.</span>
+                    <span className="text-xs text-white">Tüm Hakları Saklıdır. © 2024, SMS Yapı Grup.</span>
                   </div>
                 </div>
                 </div>
@@ -79,6 +79,6 @@ export default function Footer() {
               </div> 
             </div>
           </div> 
-        </section>
+        </footer>
     )
 }

@@ -5,7 +5,7 @@ export default function HeroSection() {
     return (
         <section 
             id="heroSection" 
-            className="h-[calc(100vh-84px)] overflow-hidden"
+            className="relative h-[calc(100vh-84px)] overflow-hidden"
         >
             {/** BG Section */}
             <div>
@@ -14,8 +14,9 @@ export default function HeroSection() {
                     <Image
                         src="/images/hero-bg.jpg"
                         alt="Hero Image"
-                        layout="fill"
-                        objectFit="cover"
+                        width={1920}
+                        height={1080}
+                        className="object-cover w-full h-full"
                     />
                 </div>
             </div>
