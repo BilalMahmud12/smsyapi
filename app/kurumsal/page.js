@@ -1,5 +1,5 @@
 import React from "react"
-import KurumsalPage from "../components/kurumsal";
+import KurumsalPage from "../components/pages/kurumsal";
 
 export default function Kurumsal() {
   return (

@@ -1,5 +1,5 @@
 import React from "react"
-import ProjectsPage from "../components/projects";
+import ProjectsPage from "../components/pages/projects";
 
 export default function Projelerimiz() {
   return (
