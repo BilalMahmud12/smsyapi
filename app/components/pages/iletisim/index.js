@@ -1,9 +1,18 @@
 import Iletisim from './iletisim.js'
+import PageSubHeader from '../../core/PageSubHeader/index.js'
 
 export default function IletisimPage() {
-    return (
-        <main id='iletişim' className="">
-            <Iletisim />
-        </main>
-    )
-}
+        const pageTitle = "Iletişim"
+        const pageDescription = "Geleceğinizi Şekillendiriyoruz - Kaliteli ve Güvenilir İnşaat Çözümleri."
+    
+        return (
+            <main id='iletisim' className="">
+                <PageSubHeader 
+                    title={pageTitle}
+                    description={pageDescription}
+                />
+                <Iletisim />
+            </main>
+        )
+    }
+    
