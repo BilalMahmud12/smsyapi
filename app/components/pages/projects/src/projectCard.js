@@ -9,7 +9,7 @@ export default function ProjectCard({ project }) {
         <React.Fragment>
             <div className="col-lg-4 col-md-6 col-sm-12">
                 <Link 
-                    href={slug}
+                    href={`projelerimiz/${slug}`}
                     className="block rounded-2xl overflow-hidden shadow transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
                 >
                     <div className="h-[280px] overflow-hidden">
