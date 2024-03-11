@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { useRouter, usePathname } from "next/navigation"
+import { usePathname } from "next/navigation"
 
 const menu = [
     { name: 'anasayfa', path: '/' },
@@ -13,10 +13,8 @@ const menu = [
 
 
 export default function Menu() {
-
-    const route = useRouter()
     const path = usePathname()
-    console.log('path', path)
+
     return (
         <ul className='flex items-center space-x-8'>
             {menu.map((item, index) => (

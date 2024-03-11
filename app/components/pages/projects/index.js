@@ -1,4 +1,4 @@
-import Projects from './projects.js'
+import Projects from './src/projects.js'
 import PageSubHeader from '../../core/PageSubHeader/index.js'
 
 export default function ProjectsPage() {
