@@ -10,6 +10,7 @@ export default function IletisimPage() {
                 <PageSubHeader 
                     title={pageTitle}
                     description={pageDescription}
+                    image='/images/contact-us-banner.jpg'
                 />
                 <Iletisim />
             </main>
