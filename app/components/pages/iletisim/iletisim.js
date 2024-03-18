@@ -16,7 +16,7 @@ export default function Iletisim() {
                                     </svg>
                                 </span>
                                 <span className="text-main text-sm">
-                                    İstiklal, Anafartalar Cd. 48 / C, 34762 Ümraniye/İstanbul
+                                    Beylerbeyi Burhaniye Mah. İsmailağa sokak No:11 Üsküdar İstanbul.
                                 </span>
                             </div>
                             <div className="flex items-center space-x-3">
