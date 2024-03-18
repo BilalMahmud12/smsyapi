@@ -5,15 +5,25 @@ import Logo from './logo'
 const menu = [
     {
         title: 'Kimiz',
-        text: ["Projeler", "Kalitemiz","Kurumsal"]
+        items: [
+          {text: "Projeler", path: "/projelerimiz"},
+          {text: "Kalitemiz", path: "/projelerimiz"},
+          {text: "Kurumsal", path: "/projelerimiz"}
+        ]
     },
     {
         title: 'Inşaat',
-        text: ["Kiralık", "Müteahhitlik"]
+        items: [{
+          text: "Müteahhitlik", path:"/"}  
+        ]
     },
     {
-        title: 'Hakkimizda',
-        text: ["Ne yapıyoruz?", "Kalitemiz", "İnancımız"]
+        title: 'Hakkımızda',
+        items: [
+          {text: "Ne yapıyoruz?", path:"/"},
+          {text: "Kalitemiz", path:"/"},
+          {text: "İnancımız", path:"/"}
+        ]
     }
 ]
 
@@ -60,22 +70,25 @@ export default function Footer() {
                 </div>
                
                 <div className='flex-1 flex justify-end'>
-                <Link href='/' target="_blank">
                  <div className="grid grid-cols-3 gap-8">
                     {menu.map((column, index) => (
                         <div key={index}>
                             <div className='space-y-2'>
-                              <div className='text-white text-m font-semibold '>{column.title}</div>  
-                              {column.text.map((t, i) => (
-                                <div key={i}>
-                                <div className='text-white text-xs'>{t}</div>
-                                </div>
+                              <div className='text-white text-m font-semibold'>
+                                {column.title}
+                              </div>
+
+                              {column.items.map((item, i) => (
+                                <Link key={i} href={item.path} className='block mb-2'>
+                                  <div>
+                                    <div className='text-white text-xs'>{item.text}</div>
+                                  </div>
+                                </Link>
                               ))} 
                             </div>
                         </div>
                     ))}
                  </div>
-                </Link>
               </div> 
             </div>
           </div> 
