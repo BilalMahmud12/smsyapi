@@ -1,15 +1,15 @@
 import React from "react"
-import HomePage from "./components/pages/homepage"
+import IletisimPage from "../components/pages/iletisim";
 
 export const metadata = {
-  title: "Ana Sayfa - SMS Yapı Grup",
+  title: "İletişim - SMS Yapı Grup",
   description: "Geleceğinizi Şekillendiriyoruz - Kaliteli ve Güvenilir İnşaat Çözümleri."
 }
 
-export default function Home() {
+export default function Iletisim() {
   return (
     <React.Fragment>
-      <HomePage />
+      <IletisimPage />
     </React.Fragment>
   );
 }
