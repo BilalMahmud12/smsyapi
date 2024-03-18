@@ -7,6 +7,7 @@ export default function GaleriPage() {
             <PageSubHeader 
                 title="Galeri"
                 description="Geleceğinizi Şekillendiriyoruz - Kaliteli ve Güvenilir İnşaat Çözümleri."
+                image="/images/hero.webp"
             />
             <Galeri />
         </main>

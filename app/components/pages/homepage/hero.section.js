@@ -12,7 +12,7 @@ export default function HeroSection() {
                 <div className="absolute z-0 top-0 left-0 right-0 h-full w-full bg-black/50" />
                 <div className="absolute z-[-1] top-0 left-0 right-0 h-full w-full">
                     <Image
-                        src="/images/hero-bg.jpg"
+                        src="/images/hero.webp"
                         alt="Hero Image"
                         width={1920}
                         height={1080}

@@ -4,3 +4,15 @@ https://tailwindcss.com
 TailwindCss Playground:
 https://play.tailwindcss.com/
 https://playcode.io/tailwind
+
+
+TODO:
+- Kurumsal Page => DONE.
+- Project Card => DONE.
+- Gallery => DONE.
+- Single Project Page => DONE.
+- Mobile Menu => DONE.
+- contact form functionality
+
+https://medium.com/@abilsavio/email-contact-form-using-nextjs-app-router-60c29fe70644
+https://nextjs.org/docs/app/building-your-application/rendering/client-components

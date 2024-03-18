@@ -1,71 +1,57 @@
 import Link from "next/link"
 import Image from "next/image"
-
-const projects = [
+import PhotoAlbum from "react-photo-album"
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Spotlight from "./spotlight";
+const photos = [
     {
-        title: 'Proje 1',
-        image: '/images/about.jpg',
-        path: '/proje-1'
+        src: "/images/projects/bogaz-koprusu-rezidanslari/bogaz-koprusu-rezidanslari.webp",
+        width: 1080,
+        height: 1080
     },
     {
-        title: 'Proje 2',
-        image: '/images/projects.png',
-        path: '/proje-2'
+        src: "/images/projects/yesilvadi-konutlari/yesilvadi-konutlari.webp",
+        width: 1080,
+        height: 1080
+    },
+    {
+        src: "/images/projects/mavi-kule-is-merkezi/mavi-kule-is-merkezi.webp",
+        width: 1080,
+        height: 1080
+    },
+    {
+        src: "/images/projects/sahil-yolu-villalari/sahil-yolu-villalari.webp",
+        width: 1080,
+        height: 1080
+    },
+    {
+        src: "/images/projects/gokyuzu-kuleleri/gokyuzu-kuleleri.webp",
+        width: 1080,
+        height: 1080
+    },
+    {
+        src: "/images/projects/prestij-plaza/prestij-plaza.webp",
+        width: 1080,
+        height: 1080
+    },
+    {
+        src: "/images/projects/beyaz-bahce-evleri/beyaz-bahce-evleri.webp",
+        width: 1080,
+        height: 1080
+    },
+    {
+        src: "/images/projects/teknopark-ofisleri/teknopark-ofisleri.webp",
+        width: 1080,
+        height: 1080
     }
 ]
-
-export default function Projects() {
+    
+export default function GaleriPage() {
     return(
-        <section id="projects" className="py-32 bg-gray-100">
+        <section id="galeri" className="py-12 bg-gray-100">
             <div className="app-container">
-                <div></div>
-                <div className="grid grid-cols-2 gap-12">
-                    {projects.map((project, index) => (
-                        <div key={index}>
-                            <Link 
-                                href={'/'}
-                                className="block relative w-full h-[300px] bg-white"
-                            >
-                                <span className="flex items-center justify-center w-16 h-16 absolute z-[10] bottom-[-20px] right-[-20px] bg-main text-white text-3xl hover:bottom-[-10px] hover:right-[-10px] transition-all duration-300 ease-in-out">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
-                                </span>
-
-                                <div className="absolute z-[1] w-full h-full top-0 left-0 bg-black/30" />
-
-                                <Image
-                                    src={project.image}
-                                    alt={project.title}
-                                    layout="fill"
-                                    objectFit="cover"
-                                />
-                            </Link>
-                        </div>
-                    ))}
-                </div>
-                <div>
-                <div className="flex h-20 items-center justify-center">
-                   
-                    <div className="flex-1 pt-8 flex justify-end text-main font-bold text-xl"> 
-                             <Link href={'/'} >
-                                 Tüm Projeleri Kesfet
-                             </Link>
-                    </div> 
-                    <div>
-                             <Link 
-                                href={'/'}
-                                className="block relative w-full h-[300px] bg-white"
-                            >
-                                <span className="flex items-center justify-center w-10 h-10 absolute z-[10] bottom-[110px] right-[-45px]  text-main text-3xl transition-all duration-300 ease-in-out">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
-                                </span>
-
-                                <div className="absolute z-[1] w-full h-full top-0 left-0 bg-black" />
-
-                            </Link>
-                    </div>
-                </div>     
-               
-               </div>
+                <Spotlight photos={photos} />
             </div>
         </section>
     )

@@ -10,6 +10,7 @@ export default function ProjectsPage() {
             <PageSubHeader 
                 title={pageTitle}
                 description={pageDescription}
+                image='/images/hero.webp'
             />
             <Projects />
         </main>

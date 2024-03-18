@@ -11,6 +11,7 @@ export default function KurumsalPage() {
             <PageSubHeader 
                 title={pageTitle}
                 description={pageDescription}
+                image="/images/hero.webp"
             />
             <Kurumsal />
         </main>

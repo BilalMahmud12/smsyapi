@@ -1,0 +1,5 @@
+export const kurumsal = {
+    "Hakkımızda": "SMS YAPI GRUP, Türkiye'nin önde gelen inşaat ve yapı şirketlerinden biri olarak, kalite ve güvenilirlik ilkeleriyle hareket etmektedir. Kurulduğu günden bu yana, müşteri memnuniyetini en üst düzeyde tutmayı hedefleyen firmamız, modern ve yenilikçi projeleriyle sektöründe fark yaratmaktadır. Tecrübeli kadromuz ve güçlü iş ortaklıklarımızla, her projemizi en ince detayına kadar titizlikle planlayıp, zamanında ve eksiksiz teslim etmeyi ilke edinmiş bulunmaktayız.",
+    "Misyonumuz": "Müşterilerimize, sürdürülebilir ve yüksek kaliteli yaşam alanları sunarak, inşaat sektöründe güvenilir bir marka olmak. Teknolojiyi ve yenilikleri takip ederek, çevreye duyarlı projeler geliştirmek ve topluma değer katmak.",
+    "Vizyonumuz": "Türkiye'de ve uluslararası alanda, inşaat ve yapı sektörünün öncü şirketlerinden biri olarak tanınmak. Kalite, güvenlik ve müşteri memnuniyetini odak noktası haline getirerek, sektördeki standartları yükseltmek ve geleceğin yaşam alanlarını inşa etmek."
+}
